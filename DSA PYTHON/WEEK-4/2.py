@@ -19,7 +19,9 @@ def quicksort(array, low=0, high=None):
     quicksort(array, low, pivot_index-1)
     quicksort(array, pivot_index+1, high)
 
-mylist = [64, 34, 25, 5, 22, 11, 90, 12]
+# Ask the user to enter numbers separated by spaces
+mylist = list(map(int, input("Enter numbers separated by spaces: ").split()))
+
 quicksort(mylist)
-print(mylist)
+print("Sorted array:", mylist)
 print("G.VISHNU CSE25113")
