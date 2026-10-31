@@ -7,7 +7,6 @@ class Node:
 class AVLTree:
     def height(self, root):
         return root.height if root else 0
-
     def get_balance(self, root):
         return self.height(root.left) - self.height(root.right) if root else 0
 
